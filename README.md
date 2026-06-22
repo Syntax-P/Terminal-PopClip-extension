@@ -29,7 +29,7 @@ Select any shell command, click the terminal icon in PopClip, and the extension 
 
 ## How it works
 
-PopClip sets the $POPCLIP_TEXT environment variable to whatever text you have selected. run.sh reads that and uses AppleScript to tell Terminal to open a new window and execute the command.
+PopClip sets the `$POPCLIP_TEXT` environment variable to whatever text you have selected. run.sh reads that and uses AppleScript to tell Terminal to open a new window and execute the command.
 
 Terminal's `do script` always opens a new window and runs the command immediately. The script checks whether Terminal has any open windows first. If there are none, it activates the app, waits 0.5s, then sends the command.
 
