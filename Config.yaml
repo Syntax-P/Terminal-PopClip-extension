@@ -5,9 +5,9 @@ icon: iconify:mdi:console
 description: Open selected text as a command in a new macOS Terminal window.
 app:
   name: Terminal
+  link: https://support.apple.com/guide/terminal/welcome/mac
   bundle identifiers: [com.apple.Terminal]
 actions:
   - title: Run in Terminal
     icon: iconify:mdi:console
     shell script file: run.sh
-    
