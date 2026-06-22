@@ -1,4 +1,4 @@
-# Run in Terminal — PopClip Extension
+# Run in Terminal - PopClip Extension
 
 A [PopClip](https://www.popclip.app) extension that sends selected text to the macOS Terminal app as a command.
 
@@ -18,7 +18,7 @@ Select any shell command, click the terminal icon in PopClip, and the extension 
 
 1. Clone or download this repo
 2. Rename the folder to `Terminal.popclipext` (must end in `.popclipext`)
-3. Double-click the folder — PopClip will prompt you to install it
+3. Double-click the folder - PopClip will prompt you to install it
 
 ## Files
 
@@ -31,11 +31,11 @@ Select any shell command, click the terminal icon in PopClip, and the extension 
 
 PopClip sets the POPCLIP_TEXT environment variable to whatever text you have selected. run.sh reads that and uses AppleScript to tell Terminal to open a new window and execute the command.
 
-Terminal's do script command always opens a new window and runs the command immediately. The script checks if Terminal has any open windows first — if not, it activates the app and waits 0.5s before sending the command.
+Terminal's `do script` always opens a new window and runs the command immediately. The script checks whether Terminal has any open windows first. If there are none, it activates the app, waits 0.5s, then sends the command.
 
 ## Also see
 
-- [iTerm-PopClip-extension](https://github.com/Syntax-P/iTerm-PopClip-extension) — same extension for iTerm2
+- [iTerm-PopClip-extension](https://github.com/Syntax-P/iTerm-PopClip-extension) - same extension for iTerm2
 
 ## License
 
